@@ -5,7 +5,19 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+	<!-- AOP 자동 프록시 설정: @Aspect 애노테이션이 붙은 클래스를 자동으로 인식 -->
 	<aop:aspectj-autoproxy />
+
+	<!-- Aspect 빈 등록 -->
+	<!-- 성능 측정 Aspect: 메소드 실행 시간을 측정합니다 -->
 	<bean id="apmUtil" class="net.zerocoding.tutorials.util.ApmUtil"></bean>
+
+	<!-- 로깅 Aspect: 다양한 Advice 타입을 보여주는 예제 -->
+	<bean id="loggingAspect" class="net.zerocoding.tutorials.aspect.LoggingAspect"></bean>
+
+	<!-- 예외 처리 Aspect: 예외를 처리하고 로깅합니다 -->
+	<bean id="exceptionHandlingAspect" class="net.zerocoding.tutorials.aspect.ExceptionHandlingAspect"></bean>
+
+	<!-- 비즈니스 로직 빈 등록 -->
 	<bean id="calculator" class="net.zerocoding.tutorials.SimpleCalculator"></bean>
 </beans>
