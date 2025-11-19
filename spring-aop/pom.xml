@@ -8,25 +8,27 @@
 	<properties>
 
 		<!-- Generic properties -->
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<!-- Spring -->
-		<spring-framework.version>4.2.6.RELEASE</spring-framework.version>
+		<spring-framework.version>5.3.31</spring-framework.version>
 
 		<!-- Hibernate / JPA -->
-		<hibernate.version>4.2.1.Final</hibernate.version>
+		<hibernate.version>5.6.15.Final</hibernate.version>
 
 		<!-- AOP -->
-		<aspectj-version>1.8.9</aspectj-version>
+		<aspectj-version>1.9.20.1</aspectj-version>
 
 		<!-- Logging -->
-		<logback.version>1.0.13</logback.version>
-		<slf4j.version>1.7.5</slf4j.version>
+		<logback.version>1.2.12</logback.version>
+		<slf4j.version>1.7.36</slf4j.version>
 
 		<!-- Test -->
-		<junit.version>4.11</junit.version>
+		<junit.version>4.13.2</junit.version>
 
 	</properties>
 
